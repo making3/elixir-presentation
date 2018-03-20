@@ -1,0 +1,16 @@
+{
+  "name": "elixir-special-topics",
+  "version": "0.1.0",
+  "description": "Elixir Special Topics demonstration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "elm-make src/Slides.elm"
+  },
+  "author": "Matthew King<making3dev@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "elm": "^0.18.0"
+  }
+}
