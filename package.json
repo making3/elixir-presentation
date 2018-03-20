@@ -1,7 +1,7 @@
 {
-  "name": "elixir-special-topics",
+  "name": "elixir-presentation",
   "version": "0.1.0",
-  "description": "Elixir Special Topics demonstration",
+  "description": "Elixir presentation & demonstration",
   "main": "index.js",
   "scripts": {
     "start": "elm-reactor",
