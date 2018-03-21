@@ -61,8 +61,68 @@ main =
             , "* Mix, Hex, ExUnit"
             , "* Hot Reloading"
             ]
+        , md """
+        # Examples!
+        """
+        , md """
+        # Creating a project
+        ```
+        $ mix new chat
+        $ cd chat
+        $ mix test
+        ```
+        """
+        , md """
+        # Mix Output
+        ```
+        $ mix new chat
+        * creating README.md
+        * creating .formatter.exs
+        * creating .gitignore
+        * creating mix.exs
+        * creating config
+        * creating config/config.exs
+        * creating lib
+        * creating lib/chat.ex
+        * creating test
+        * creating test/test_helper.exs
+        * creating test/chat_test.exs
+        ```
+        """
+        , md """
+        # Mix Test Output
+
+        ```
+        $ cd chat
+        $ mix test
+        Compiling 1 file (.ex)
+        Generated chat app
+        ..
+
+        Finished in 0.03 seconds
+        1 doctest, 1 test, 0 failures
+
+        Randomized with seed 485747
+        ```
+        """
+        , md """
+        # REPL
+        ```
+        $ iex -S mix
+        Erlang/OTP 20 ...
+
+        Interactive Elixir (1.6.1)
+        iex(1)> Chat.hello
+        :world
+        ```
+        """
         , md
             """
-        # Demo
+        # Clustering Demo
         """
+        , mdFragments
+            [ "# Thanks To.."
+            , "* [David Schmitz - Bootstrap |> Elixir](https://www.slideshare.net/koenighotze/bootstrap-elixir-easy-fun-for-busy-developers)"
+            , "* [Bryan Hunter - What every Node.JS developer needs to know about Elixir](https://vimeo.com/171068992)"
+            ]
         ]
