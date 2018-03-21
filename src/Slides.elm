@@ -17,28 +17,12 @@ main =
             , "* NodeJS"
             , "* Elixir"
             ]
-        , md
-            """
-            # Agenda?
-            * What is Elixir?
-            * Why Elixir
-            * Why Not Elixir?
-            * Who's using Elixir? Erlang?
-            * Examples
-            """
         , mdFragments
             [ "# What is Elixir?"
             , "* Dynamic, functional language for building scalable and maintainable applications"
             , "* Runs on the Erlang virtual machine (BEAM)"
             , "* Anything written in Erlang can be ran in Elixir"
             ]
-        , md
-            """
-        # Who uses Elixir?
-          * Discord
-          * Pinterest
-          * HelloSign
-        """
         , md
             """
         # Example Elixir
@@ -69,25 +53,16 @@ main =
           io:format("~s~n", ["Hello world!"]).
         ```
         """
-        , md
-            """
-        # Who uses Erlang?
-          * Facebook
-          * WhatsApp
-          * RabbitMQ
-          * Amazon SimpleDB
-        """
         , mdFragments
-            [ "# Fault Tolerance" ]
-        , mdFragments
-            [ "# Hot Code Reloading" ]
-        , mdFragments
-            [ "# Other Features"
-            , "* Functional Programming"
-            , "* Extensibility"
+            [ "# Why use Elixir?"
+            , "* Functional"
+            , "* Immutable"
+            , "* Fault Tolerant"
+            , "* Mix, Hex, ExUnit"
+            , "* Hot Reloading"
             ]
         , md
             """
-        # Demo Time!
+        # Demo
         """
         ]
