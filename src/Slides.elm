@@ -26,7 +26,7 @@ main =
         , md """
         ## Example Elixir
 
-        ```
+        ```elixir
         defmodule MyModule do
           def hello do
             IO.puts "Hello World"
@@ -42,7 +42,7 @@ main =
             ]
         , md """
         ## Example Erlang
-        ```
+        ```erlang
         % module_name.erl
         -module(module_name).
         -compile(export_all).
@@ -105,7 +105,7 @@ main =
         """
         , md """
         ## REPL
-        ```
+        ```elixir
         $ iex -S mix
         Erlang/OTP 20 ...
 
@@ -116,7 +116,7 @@ main =
         """
         , md """
         ## Basic Functions
-        ```
+        ```elixir
         defmodule Chat.Repeater do
           def repeat(text) do
             "Repeating " <> text
@@ -126,10 +126,11 @@ main =
         """
         , md """
         ## Anonymous Functions
-        ```
+        ```elixir
         iex> repeat = fn (text) -> "Repeating " <> text end
         iex> repeat.("Hello")
         Repeating Hello
+
         iex> repeat2 = &("Repeating " <> &1)
         iex> repeat2.("World")
         Repeating World
@@ -137,7 +138,7 @@ main =
         """
         , md """
         ## Match Operator
-        ```
+        ```elixir
         iex> x = 1
         1
         iex> x
@@ -150,7 +151,7 @@ main =
         """
         , md """
         ## Pattern Matching
-        ```
+        ```elixir
         iex> {a, b, c} = {:hello, "world", 42}
         {:hello, "world", 42}
         iex> a
@@ -166,7 +167,7 @@ main =
         """
         , md """
         ## Pattern Matching Continued
-        ```
+        ```elixir
         defmodule Chat.Repeater do
           def repeat(0) do
             repeat("Zero")
@@ -185,7 +186,7 @@ main =
         """
         , md """
         ## Guards
-        ```
+        ```elixir
         defmodule Chat.Repeater do
           def repeat(text) when is_integer(text) do
             text
