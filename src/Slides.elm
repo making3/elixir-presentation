@@ -116,6 +116,27 @@ main =
         :world
         ```
         """
+        , md """
+        # Basic Functions
+        ```
+        defmodule Chat.Repeater do
+          def repeat(text) do
+            "Repeating " <> text
+          end
+        end
+        ```
+        """
+        , md """
+        # Anonymous Functions
+        ```
+        iex> repeat = fn (text) -> "Repeating " <> text end
+        iex> repeat.("Hello")
+        Repeating Hello
+        iex> repeat2 = &("Repeating " <> &1)
+        iex> repeat2.("World")
+        Repeating World
+        ```
+        """
         , md
             """
         # Clustering Demo

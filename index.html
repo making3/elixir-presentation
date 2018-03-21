@@ -16634,24 +16634,32 @@ var _user$project$Main$main = A2(
 													_0: _xarvh$elm_slides$Slides$md('\n        # REPL\n        ```\n        $ iex -S mix\n        Erlang/OTP 20 ...\n\n        Interactive Elixir (1.6.1)\n        iex(1)> Chat.hello\n        :world\n        ```\n        '),
 													_1: {
 														ctor: '::',
-														_0: _xarvh$elm_slides$Slides$md('\n        # Clustering Demo\n        '),
+														_0: _xarvh$elm_slides$Slides$md('\n        # Basic Functions\n        ```\n        defmodule Chat.Repeater do\n          def repeat(text) do\n            \"Repeating \" <> text\n          end\n        end\n        ```\n        '),
 														_1: {
 															ctor: '::',
-															_0: _xarvh$elm_slides$Slides$mdFragments(
-																{
+															_0: _xarvh$elm_slides$Slides$md('\n        # Anonymous Functions\n        ```\n        iex> repeat = fn (text) -> \"Repeating \" <> text end\n        iex> repeat.(\"Hello\")\n        Repeating Hello\n        iex> repeat2 = &(\"Repeating \" <> &1)\n        iex> repeat2.(\"World\")\n        Repeating World\n        ```\n        '),
+															_1: {
+																ctor: '::',
+																_0: _xarvh$elm_slides$Slides$md('\n        # Clustering Demo\n        '),
+																_1: {
 																	ctor: '::',
-																	_0: '# Thanks To..',
-																	_1: {
-																		ctor: '::',
-																		_0: '* [David Schmitz - Bootstrap |> Elixir](https://www.slideshare.net/koenighotze/bootstrap-elixir-easy-fun-for-busy-developers)',
-																		_1: {
+																	_0: _xarvh$elm_slides$Slides$mdFragments(
+																		{
 																			ctor: '::',
-																			_0: '* [Bryan Hunter - What every Node.JS developer needs to know about Elixir](https://vimeo.com/171068992)',
-																			_1: {ctor: '[]'}
-																		}
-																	}
-																}),
-															_1: {ctor: '[]'}
+																			_0: '# Thanks To..',
+																			_1: {
+																				ctor: '::',
+																				_0: '* [David Schmitz - Bootstrap |> Elixir](https://www.slideshare.net/koenighotze/bootstrap-elixir-easy-fun-for-busy-developers)',
+																				_1: {
+																					ctor: '::',
+																					_0: '* [Bryan Hunter - What every Node.JS developer needs to know about Elixir](https://vimeo.com/171068992)',
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}),
+																	_1: {ctor: '[]'}
+																}
+															}
 														}
 													}
 												}
