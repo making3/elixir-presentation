@@ -43,8 +43,12 @@ main =
             """
         # Example Elixir
 
-        TODO: Fill in sample Elixir code
-        ```elixir
+        ```
+        defmodule MyModule do
+          def hello do
+            IO.puts "Hello World"
+          end
+        end
         ```
         """
         , mdFragments
@@ -56,9 +60,13 @@ main =
         , md
             """
         # Example Erlang
+        ```
+        % module_name.erl
+        -module(module_name).
+        -compile(export_all).
 
-        TODO: Fill in sample Erlang code
-        ```erlang
+        hello() ->
+          io:format("~s~n", ["Hello world!"]).
         ```
         """
         , md
@@ -80,6 +88,6 @@ main =
             ]
         , md
             """
-        Demo Time!
+        # Demo Time!
         """
         ]
