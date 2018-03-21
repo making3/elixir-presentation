@@ -16565,7 +16565,7 @@ var _user$project$Main$main = A2(
 					}),
 				_1: {
 					ctor: '::',
-					_0: _xarvh$elm_slides$Slides$md('\n        # Example Elixir\n\n        ```\n        defmodule MyModule do\n          def hello do\n            IO.puts \"Hello World\"\n          end\n        end\n        ```\n        '),
+					_0: _xarvh$elm_slides$Slides$md('\n        ## Example Elixir\n\n        ```\n        defmodule MyModule do\n          def hello do\n            IO.puts \"Hello World\"\n          end\n        end\n        ```\n        '),
 					_1: {
 						ctor: '::',
 						_0: _xarvh$elm_slides$Slides$mdFragments(
@@ -16588,7 +16588,7 @@ var _user$project$Main$main = A2(
 							}),
 						_1: {
 							ctor: '::',
-							_0: _xarvh$elm_slides$Slides$md('\n        # Example Erlang\n        ```\n        % module_name.erl\n        -module(module_name).\n        -compile(export_all).\n\n        hello() ->\n          io:format(\"~s~n\", [\"Hello world!\"]).\n        ```\n        '),
+							_0: _xarvh$elm_slides$Slides$md('\n        ## Example Erlang\n        ```\n        % module_name.erl\n        -module(module_name).\n        -compile(export_all).\n\n        hello() ->\n          io:format(\"~s~n\", [\"Hello world!\"]).\n        ```\n        '),
 							_1: {
 								ctor: '::',
 								_0: _xarvh$elm_slides$Slides$mdFragments(
@@ -16622,42 +16622,62 @@ var _user$project$Main$main = A2(
 									_0: _xarvh$elm_slides$Slides$md('\n        # Examples!\n        '),
 									_1: {
 										ctor: '::',
-										_0: _xarvh$elm_slides$Slides$md('\n        # Creating a project\n        ```\n        $ mix new chat\n        $ cd chat\n        $ mix test\n        ```\n        '),
+										_0: _xarvh$elm_slides$Slides$md('\n        ## Creating a project\n        ```\n        $ mix new chat\n        $ cd chat\n        $ mix test\n        ```\n        '),
 										_1: {
 											ctor: '::',
-											_0: _xarvh$elm_slides$Slides$md('\n        # Mix Output\n        ```\n        $ mix new chat\n        * creating README.md\n        * creating .formatter.exs\n        * creating .gitignore\n        * creating mix.exs\n        * creating config\n        * creating config/config.exs\n        * creating lib\n        * creating lib/chat.ex\n        * creating test\n        * creating test/test_helper.exs\n        * creating test/chat_test.exs\n        ```\n        '),
+											_0: _xarvh$elm_slides$Slides$md('\n        ## Mix Output\n        ```\n        $ mix new chat\n        * creating README.md\n        * creating .formatter.exs\n        * creating .gitignore\n        * creating mix.exs\n        * creating config\n        * creating config/config.exs\n        * creating lib\n        * creating lib/chat.ex\n        * creating test\n        * creating test/test_helper.exs\n        * creating test/chat_test.exs\n        ```\n        '),
 											_1: {
 												ctor: '::',
-												_0: _xarvh$elm_slides$Slides$md('\n        # Mix Test Output\n\n        ```\n        $ cd chat\n        $ mix test\n        Compiling 1 file (.ex)\n        Generated chat app\n        ..\n\n        Finished in 0.03 seconds\n        1 doctest, 1 test, 0 failures\n\n        Randomized with seed 485747\n        ```\n        '),
+												_0: _xarvh$elm_slides$Slides$md('\n        ## Mix Test Output\n\n        ```\n        $ cd chat\n        $ mix test\n        Compiling 1 file (.ex)\n        Generated chat app\n        ..\n\n        Finished in 0.03 seconds\n        1 doctest, 1 test, 0 failures\n\n        Randomized with seed 485747\n        ```\n        '),
 												_1: {
 													ctor: '::',
-													_0: _xarvh$elm_slides$Slides$md('\n        # REPL\n        ```\n        $ iex -S mix\n        Erlang/OTP 20 ...\n\n        Interactive Elixir (1.6.1)\n        iex(1)> Chat.hello\n        :world\n        ```\n        '),
+													_0: _xarvh$elm_slides$Slides$md('\n        ## REPL\n        ```\n        $ iex -S mix\n        Erlang/OTP 20 ...\n\n        Interactive Elixir (1.6.1)\n        iex(1)> Chat.hello\n        :world\n        ```\n        '),
 													_1: {
 														ctor: '::',
-														_0: _xarvh$elm_slides$Slides$md('\n        # Basic Functions\n        ```\n        defmodule Chat.Repeater do\n          def repeat(text) do\n            \"Repeating \" <> text\n          end\n        end\n        ```\n        '),
+														_0: _xarvh$elm_slides$Slides$md('\n        ## Basic Functions\n        ```\n        defmodule Chat.Repeater do\n          def repeat(text) do\n            \"Repeating \" <> text\n          end\n        end\n        ```\n        '),
 														_1: {
 															ctor: '::',
-															_0: _xarvh$elm_slides$Slides$md('\n        # Anonymous Functions\n        ```\n        iex> repeat = fn (text) -> \"Repeating \" <> text end\n        iex> repeat.(\"Hello\")\n        Repeating Hello\n        iex> repeat2 = &(\"Repeating \" <> &1)\n        iex> repeat2.(\"World\")\n        Repeating World\n        ```\n        '),
+															_0: _xarvh$elm_slides$Slides$md('\n        ## Anonymous Functions\n        ```\n        iex> repeat = fn (text) -> \"Repeating \" <> text end\n        iex> repeat.(\"Hello\")\n        Repeating Hello\n        iex> repeat2 = &(\"Repeating \" <> &1)\n        iex> repeat2.(\"World\")\n        Repeating World\n        ```\n        '),
 															_1: {
 																ctor: '::',
-																_0: _xarvh$elm_slides$Slides$md('\n        # Clustering Demo\n        '),
+																_0: _xarvh$elm_slides$Slides$md('\n        ## Match Operator\n        ```\n        iex> x = 1\n        1\n        iex> x\n        1\n        iex> x = 2\n        2\n        iex> 2 = x\n        2\n        ```\n        '),
 																_1: {
 																	ctor: '::',
-																	_0: _xarvh$elm_slides$Slides$mdFragments(
-																		{
+																	_0: _xarvh$elm_slides$Slides$md('\n        ## Pattern Matching\n        ```\n        iex> {a, b, c} = {:hello, \"world\", 42}\n        {:hello, \"world\", 42}\n        iex> a\n        :hello\n\n        iex> [head | tail] = [1, 2, 3]\n        [1, 2, 3]\n        iex> head\n        1\n        iex> tail\n        [2, 3]\n        ```\n        '),
+																	_1: {
+																		ctor: '::',
+																		_0: _xarvh$elm_slides$Slides$md('\n        ## Pattern Matching Continued\n        ```\n        defmodule Chat.Repeater do\n          def repeat(0) do\n            repeat(\"Zero\")\n          end\n\n          def repeat(text) do\n            \"Repeating \" <> text\n          end\n        end\n\n        iex> Chat.Repeater.repeat(0)\n        \"Repeating Zero\"\n        iex> Chat.Repeater.repeat(\"foo\")\n        \"Repeating foo\"\n        ```\n        '),
+																		_1: {
 																			ctor: '::',
-																			_0: '# Thanks To..',
+																			_0: _xarvh$elm_slides$Slides$md('\n        ## Guards\n        ```\n        defmodule Chat.Repeater do\n          def repeat(text) when is_integer(text) do\n            text\n            |> to_string()\n            |> repeat()\n          end\n          ...\n        end\n\n        iex> Chat.Repeater.repeat(1)\n        \"Repeating 1\"\n        ```\n        '),
 																			_1: {
 																				ctor: '::',
-																				_0: '* [David Schmitz - Bootstrap |> Elixir](https://www.slideshare.net/koenighotze/bootstrap-elixir-easy-fun-for-busy-developers)',
+																				_0: _xarvh$elm_slides$Slides$md('\n        ## Pipe Operator\n        ```elixir\n        iex> \"Elixir rocks\" |> String.split()\n        [\"Elixir\", \"rocks\"]\n        iex> \"Elixir rocks\" |> String.upcase() |> String.split()\n        [\"ELIXIR\", \"ROCKS\"]\n        ```\n        '),
 																				_1: {
 																					ctor: '::',
-																					_0: '* [Bryan Hunter - What every Node.JS developer needs to know about Elixir](https://vimeo.com/171068992)',
-																					_1: {ctor: '[]'}
+																					_0: _xarvh$elm_slides$Slides$md('\n        # Clustering Demo\n        '),
+																					_1: {
+																						ctor: '::',
+																						_0: _xarvh$elm_slides$Slides$mdFragments(
+																							{
+																								ctor: '::',
+																								_0: '# Thanks To..',
+																								_1: {
+																									ctor: '::',
+																									_0: '* [David Schmitz - Bootstrap |> Elixir](https://www.slideshare.net/koenighotze/bootstrap-elixir-easy-fun-for-busy-developers)',
+																									_1: {
+																										ctor: '::',
+																										_0: '* [Bryan Hunter - What every Node.JS developer needs to know about Elixir](https://vimeo.com/171068992)',
+																										_1: {ctor: '[]'}
+																									}
+																								}
+																							}),
+																						_1: {ctor: '[]'}
+																					}
 																				}
 																			}
-																		}),
-																	_1: {ctor: '[]'}
+																		}
+																	}
 																}
 															}
 														}

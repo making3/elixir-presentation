@@ -23,9 +23,8 @@ main =
             , "* Runs on the Erlang virtual machine (BEAM)"
             , "* Anything written in Erlang can be ran in Elixir"
             ]
-        , md
-            """
-        # Example Elixir
+        , md """
+        ## Example Elixir
 
         ```
         defmodule MyModule do
@@ -41,9 +40,8 @@ main =
             , "* Erlang first appeared in 1986"
             , "* If Java is 'write once, run anywhere', then Erlang is 'write once, run forever'. - [Joe Armstring](https://www.youtube.com/watch?v=u41GEwIq2mE&t=3m59s)"
             ]
-        , md
-            """
-        # Example Erlang
+        , md """
+        ## Example Erlang
         ```
         % module_name.erl
         -module(module_name).
@@ -65,7 +63,7 @@ main =
         # Examples!
         """
         , md """
-        # Creating a project
+        ## Creating a project
         ```
         $ mix new chat
         $ cd chat
@@ -73,7 +71,7 @@ main =
         ```
         """
         , md """
-        # Mix Output
+        ## Mix Output
         ```
         $ mix new chat
         * creating README.md
@@ -90,7 +88,7 @@ main =
         ```
         """
         , md """
-        # Mix Test Output
+        ## Mix Test Output
 
         ```
         $ cd chat
@@ -106,7 +104,7 @@ main =
         ```
         """
         , md """
-        # REPL
+        ## REPL
         ```
         $ iex -S mix
         Erlang/OTP 20 ...
@@ -117,7 +115,7 @@ main =
         ```
         """
         , md """
-        # Basic Functions
+        ## Basic Functions
         ```
         defmodule Chat.Repeater do
           def repeat(text) do
@@ -127,7 +125,7 @@ main =
         ```
         """
         , md """
-        # Anonymous Functions
+        ## Anonymous Functions
         ```
         iex> repeat = fn (text) -> "Repeating " <> text end
         iex> repeat.("Hello")
@@ -135,6 +133,79 @@ main =
         iex> repeat2 = &("Repeating " <> &1)
         iex> repeat2.("World")
         Repeating World
+        ```
+        """
+        , md """
+        ## Match Operator
+        ```
+        iex> x = 1
+        1
+        iex> x
+        1
+        iex> x = 2
+        2
+        iex> 2 = x
+        2
+        ```
+        """
+        , md """
+        ## Pattern Matching
+        ```
+        iex> {a, b, c} = {:hello, "world", 42}
+        {:hello, "world", 42}
+        iex> a
+        :hello
+
+        iex> [head | tail] = [1, 2, 3]
+        [1, 2, 3]
+        iex> head
+        1
+        iex> tail
+        [2, 3]
+        ```
+        """
+        , md """
+        ## Pattern Matching Continued
+        ```
+        defmodule Chat.Repeater do
+          def repeat(0) do
+            repeat("Zero")
+          end
+
+          def repeat(text) do
+            "Repeating " <> text
+          end
+        end
+
+        iex> Chat.Repeater.repeat(0)
+        "Repeating Zero"
+        iex> Chat.Repeater.repeat("foo")
+        "Repeating foo"
+        ```
+        """
+        , md """
+        ## Guards
+        ```
+        defmodule Chat.Repeater do
+          def repeat(text) when is_integer(text) do
+            text
+            |> to_string()
+            |> repeat()
+          end
+          ...
+        end
+
+        iex> Chat.Repeater.repeat(1)
+        "Repeating 1"
+        ```
+        """
+        , md """
+        ## Pipe Operator
+        ```elixir
+        iex> "Elixir rocks" |> String.split()
+        ["Elixir", "rocks"]
+        iex> "Elixir rocks" |> String.upcase() |> String.split()
+        ["ELIXIR", "ROCKS"]
         ```
         """
         , md
